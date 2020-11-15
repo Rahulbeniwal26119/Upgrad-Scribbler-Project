@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+/* importing google font for Scribber logo 
+as no font was specified in project detail */
+
+.in-upbuttons  /*  signin signup div */
+{ 
+  position: absolute;
+  right: 0px;
+  margin: 0.3rem;
+}
+
+#signin, /*  signin signup buttons */
+#signup {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logo { /* styling logo */
+  padding-top: 0;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+#main { /* main heading */
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  color: blue;
+  margin-left: 0.5%;
+}
+
+#tagline {  /* tagline */
+  position: absolute;
+  top: 3.1rem;
+  font-size: 0.8rem;
+  margin-left: 0.7%;
+  padding: 0;
+}
+
+#signin {
+  margin-right: 0.3rem;
+}
