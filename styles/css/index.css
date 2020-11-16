@@ -30,3 +30,16 @@ body
     padding: 0.8rem 0.8rem;
     cursor: pointer;
 }
+
+.post-buttons a {
+    color: black;
+}
+
+.post-buttons a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.post-buttons a:visited {
+    color: black;
+}
