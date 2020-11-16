@@ -11,36 +11,38 @@
 </head>
 
 <body>
-  <div id="signinModal" class="modal">
+
+  <div id="mainparent-signin"></div>
+  <div id="mainparent-signup"></div>
+
+  <div id="penPostModal" class="modal">
     <div id="modal-content">
       <div class="modal-header">
         <div class="close">&times;</div>
-        <h2 class="modal-heading">Welcome Back!</h2>
-        <hr>
+        <h2 class="modal-heading" id="penPost-heading">Pen Your Post</h2>
       </div>
       <div class="modal-body">
-        <div class="signin-modal">
-          <div class="signin-option">
-            <label for="username" class="labels">Username</label> <br>
-            <input type="text" id="username" placeholder="Enter Username" required>
-          </div>
-          <div class="signin-option">
-            <label for="password-signin" class="labels">Password</label><br>
-            <input type="password" id="password-signin" placeholder="Enter Password" required>
-          </div>
-          <div class="signin-option">
-            <button class="signin-button">Sign In</button>
-          </div>
-          <div class="not-member">
-            <span id="yes">Not a member?</span>
-            <span id="show-signup"> <a href="#">Sign Up</a></span>
-          </div>
+        <div class="penPost-modal">
+          <form method="post" onsubmit="event.preventDefault(); myValidation();">
+            <div class="penPost-option" id="content-title">
+              <label for="Title" class="labels">Title:</label> <br>
+              <input type="text" id="Title" required>
+            </div>
+            <div class="penPost-option" id="content-text">
+              <label for="Content" class="labels">Content:</label> <br>
+              <textarea name="Content" id="Content" cols="300" rows="14" required></textarea>
+            </div>
+            <div class="penPost-option create-button">
+              <button class="penPost-button" type="submit">Create</button>
+            </div>
+          </form>
         </div>
       </div>
       <div class="modal-footer">
       </div>
     </div>
   </div>
+
   <nav class="nav">
     <!-- Adding naviagation-->
     <div class="input-buttons">
@@ -57,7 +59,7 @@
   <section>
     <!-- Adding Post Section -->
     <div class="post-buttons">
-      <button id="button1" class="buttonpost">All Posts</button>
+      <button id="button1" class="buttonpost"> <a href="./html/bloglist.html"> All Posts</a></button>
       <button id="button2" class="buttonpost">Create Post</button>
     </div>
   </section>
