@@ -70,6 +70,7 @@ var signUpModal =
     '</div>' +
     '</div>'
 
+/* mainparent-signin and mainparent-signup are div which contain modals*/
 document.getElementById("mainparent-signin").innerHTML = signInModal;
 document.getElementById("mainparent-signup").innerHTML = signUpModal;
 
