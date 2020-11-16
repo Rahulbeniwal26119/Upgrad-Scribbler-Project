@@ -49,7 +49,9 @@ as no font was specified in project detail */
     margin-right: 0.3rem;
 }
 
-#signinModal {
+#signinModal,
+#signupModal,
+#penPostModal {
     font-family: 'Fira Sans', sans-serif;
     display: none;
     /* hidden by default*/
@@ -134,9 +136,12 @@ as no font was specified in project detail */
     font-weight: 1.3rem;
 }
 
-.signin-option input {
+.signin-option input,
+.signup-option input,
+.penPost-option input,
+.penPost-option textarea {
     outline: 0;
-    background: #f2f2f2;
+    background: #f3f1f1;
     width: 100%;
     border: 0;
     margin: 0 0 15px;
@@ -145,10 +150,11 @@ as no font was specified in project detail */
     font-size: 14px;
 }
 
-.signin-option button {
-    text-transform: uppercase;
+.signin-option button,
+.signup-option button,
+.penPost-option button {
+    text-transform: capitalize;
     outline: 0;
-    width: 100%;
     cursor: pointer;
     background-color: #4CAF50;
     border: 0;
@@ -158,7 +164,14 @@ as no font was specified in project detail */
 
 }
 
-.signin-option {
+.signin-option button,
+.signup-option button,
+    {
+    width: 100%;
+}
+
+.signin-option .signup-option,
+.penPost-option {
     margin: 0.5rem;
 }
 
@@ -182,4 +195,44 @@ as no font was specified in project detail */
 
 .labels {
     font-weight: bolder;
+}
+
+#penPostModal #modal-content {
+    width: 70%;
+
+}
+
+#signupModal,
+#penPostModal {
+    padding-top: 20px;
+}
+
+.create-button {
+    width: 100%;
+    text-align: center;
+}
+
+.create-button button {
+    width: fit-content;
+}
+
+.penPost-option input {
+    width: 50%;
+}
+
+.penPost-option textarea {
+    border: 1px solid #bdafaf;
+}
+
+div#content-title {
+    padding-top: 0vh;
+    padding-bottom: 3vh;
+}
+
+div#content-text {
+    margin-bottom: 0vh;
+}
+
+h2#penPost-heading {
+    padding: 0;
 }
