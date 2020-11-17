@@ -10,8 +10,8 @@ var signInModal =
     '    <div class="signin-modal">' +
     '      <form method="post" onsubmit="event.preventDefault(); myValidation();">' +
     '      <div class="signin-option">' +
-    '          <label for="username" class="labels">Username</label> <br>' +
-    '          <input type="text" id="username" placeholder="Enter Username" required>' +
+    '          <label for="username-signin" class="labels">Username</label> <br>' +
+    '          <input type="text" id="username-signin" placeholder="Enter Username" required>' +
     `        </div>` +
     '        <div class="signin-option">' +
     '          <label for="password-signin" class="labels">Password</label><br>' +
@@ -48,8 +48,8 @@ var signUpModal =
     '          <input type="text" id="fullname" placeholder="Enter Full Name" required>' +
     '        </div>' +
     '        <div class="signup-option">' +
-    '          <label for="username" class="labels">Username<br>' +
-    '            <input type="text" id="username" placeholder="Enter Username" required>' +
+    '          <label for="username-signup" class="labels">Username<br>' +
+    '            <input type="text" id="username-signup" placeholder="Enter Username" required>' +
     '        </div>' +
     '        <div class="signup-option">' +
     '          <label for="password-signup" class="labels">Password</label><br>' +
@@ -104,8 +104,11 @@ function showCreatePostModal() {
 
 signInButton.addEventListener("click", showSignInModal);
 signUpButton.addEventListener("click", showSignUpModal);
-createPostButton.addEventListener("click", showCreatePostModal);
-
+try {
+    createPostButton.addEventListener("click", showCreatePostModal);
+}
+catch (e) {
+}
 
 if (signUpLink.addEventListener("click", showSignUpModal)) {
     hideModal();
@@ -114,15 +117,23 @@ if (signUpLink.addEventListener("click", showSignUpModal)) {
 function hideModal() {
     signInModal.style.display = "none";
     signUpModal.style.display = "none";
-    penPostModal.style.display = "none";
+    try {
+        penPostModal.style.display = "none";
+    }
+    catch (e) {
+
+    }
     console.log("close clicked");
 }
 
 
 closeSignInButton.onclick = hideModal;
 closeSignUpButton.onclick = hideModal;
-closeCreatePostButton.onclick = hideModal;
-
+try {
+    closeCreatePostButton.onclick = hideModal;
+}
+catch (e) {
+}
 window.onclick = function (event) {
     if (event.target == signInModal)
         signInModal.style.display = "none";
