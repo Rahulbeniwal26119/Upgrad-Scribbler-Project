@@ -165,8 +165,8 @@ as no font was specified in project detail */
 }
 
 .signin-option button,
-.signup-option button,
-    {
+.signup-option button {
+
     width: 100%;
 }
 
