@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../styles/css/header.css" />
-    <link rel="stylesheet" href="../styles/css/bloglist.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
-      rel="stylesheet"
-    />
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../styles/css/header.css" />
+  <link rel="stylesheet" href="../styles/css/bloglist.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
   </head>
 
   <body>
@@ -33,6 +40,7 @@
       </nav>
     </header>
 
+
     <div class="post-container">
       <div class="post">
         <div class="author">
@@ -42,17 +50,19 @@
         <div class="content">
           <i class="fa fa-trash delete" aria-hidden="true"></i>
           <div>
-            <p class="title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-            <span> </span>
+            <p class="title" id="">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+            <span>
+            </span>
           </div>
           <p class="post-content">
             Since JavaScript does not have any type-checking, either of these
-            keywords can be used to declare a variable of any type (datatype) in
-            JavaScript. Though all the three keywords are used for the same
+            keywords can be used to declare a variable of any type (datatype)
+            in JavaScript. Though all the three keywords are used for the same
             purpose, they are different.
           </p>
-          <div class="button">...</div>
-          <span> </span>
+          <div class="button"><a href="../html/post.html">...</a></div>
+          <span>
+          </span>
         </div>
       </div>
 
@@ -65,15 +75,18 @@
           <i class="fa fa-trash delete" aria-hidden="true"></i>
           <div>
             <p class="title">What is linting and how can it save you time?</p>
-            <span> </span>
+            <span>
+            </span>
           </div>
           <p class="post-content">
             One of the biggest challenges in software development is time. It’s
             something we can’t easily get more of, but linting can help us make
             the most out of the time we have.
           </p>
-          <span> </span>
-          <div class="button">...</div>
+          <span>
+          </span>
+          <div class="button"><a href="../html/post.html">...</a></div>
+
         </div>
       </div>
 
@@ -87,7 +100,8 @@
 
           <div>
             <p class="title">How to Get More Views on Your Tech Blog</p>
-            <span> </span>
+            <span>
+            </span>
           </div>
           <p class="post-content">
             If you're a developer with a Twitter account, you've already seen
@@ -95,8 +109,10 @@
             all want to become stars, or at the very least, a recognizable name
             in the industry.
           </p>
-          <span> </span>
-          <div class="button">...</div>
+          <span>
+          </span>
+          <div class="button"><a href="../html/post.html">...</a></div>
+
         </div>
       </div>
 
@@ -110,7 +126,8 @@
 
           <div>
             <p class="title">How to write easily describable code</p>
-            <span> </span>
+            <span>
+            </span>
           </div>
           <p class="post-content">
             When code is not describable using words, most people have to do
@@ -119,8 +136,10 @@
             people will map to different words, which leads to confusion when
             discussing the code.
           </p>
-          <span> </span>
-          <div class="button">...</div>
+          <span>
+          </span>
+          <div class="button"><a href="../html/post.html">...</a></div>
+
         </div>
       </div>
 
@@ -135,7 +154,8 @@
             <p class="title">
               Everything you should know about ‘module’ & ‘require’ in Node.js
             </p>
-            <span> </span>
+            <span>
+            </span>
           </div>
           <p class="post-content">
             Node.js treats each JavaScript file as a separate module. For
@@ -143,14 +163,47 @@
             named xyz.js, then this file is treated as a module in Node, and you
             can say that you’ve created a module named xyz.
           </p>
-          <span> </span>
-          <div class="button">...</div>
+          <span>
+          </span>
+          <div class="button"><a href="../html/post.html">...</a></div>
+
         </div>
       </div>
 
-      <!-- TODO: Write code for delete post modal here -->
+    </div>
+
+
+
+    <!-- TODO: Write code for delete post modal here -->
+
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <div id="delete-modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="delete-modal-content">
+        <div class="delete-modal-header">
+          <!-- <div id="close-delete">&times;</div> -->
+          <p class="delete-modal-heading">Are you sure you want to delete this post?</p>
+        </div>
+        <div class="modal-body">
+          <div class="delete-modal-body">
+            <button id="yes-delete">Yes</button>
+            <button id="no-delete">No</button>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
+      </div>
+    </div>
+
+    </div>
     </div>
     <!-- list of all posts ends here -->
+
     <script src="../scripts/js/header.js"></script>
+    <script src="../scripts/js/bloglist.js"></script>
   </body>
+
 </html>
