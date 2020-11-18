@@ -4,12 +4,17 @@ body {
 }
 
 #comment-area {
-    max-width: 50%;
+    max-width: 65%;
 }
 
 .post-title {
+    background: red;
     text-align: center;
-    margin-bottom: 3%;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    font-size: 30px;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Pragati Narrow', sans-serif;
 }
 
 .post-option {
@@ -19,7 +24,7 @@ body {
 
 .author-option {
     width: 100%;
-    background: red;
+    margin-bottom: 5vh;
 }
 
 
@@ -30,8 +35,9 @@ body {
 #posttext {
     width: 100%;
     border: 1px solid red;
-    /* resize: none; */
+    resize: none;
     box-sizing: border-box;
+    height: 30vh;
 
 
 }
@@ -45,5 +51,34 @@ body {
     background: orange;
     width: 50%;
     position: relative;
-    top: 22px;
+    top: 37px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.edit-save button {
+    border: 0;
+    outline: 0;
+    padding: 11px 11px 11px 25px;
+    background: rgb(240, 20, 64);
+    box-shadow: ;
+    color: white;
+}
+
+.like button {
+    margin-top: 3vh;
+    padding: 10px 30px;
+    border: 0;
+    outline: 0;
+    background: rgb(240, 20, 64);
+    color: white;
+}
+
+#comment button {
+    margin-top: 3vh;
+    padding: 10px 10px;
+    border: 0;
+    outline: 0;
+    background: rgb(240, 20, 64);
+    color: white;
 }
