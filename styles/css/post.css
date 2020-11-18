@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#comment-area {
+    max-width: 50%;
+}
+
+.post-title {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.post-option {
+    padding: 3vw;
+    /* width: 100vw; */
+}
+
+.author-option {
+    width: 100%;
+    background: red;
+}
+
+
+.edit-content {
+    width: 100%;
+}
+
+#posttext {
+    width: 100%;
+    border: 1px solid red;
+    /* resize: none; */
+    box-sizing: border-box;
+
+
+}
+
+.edit-save {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.author-name {
+    background: orange;
+    width: 50%;
+    position: relative;
+    top: 22px;
+}
