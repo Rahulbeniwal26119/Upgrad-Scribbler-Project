@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title></title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/css/header.css" />
     <link rel="stylesheet" href="../styles/css/post.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&family=Pragati+Narrow&display=swap"
+        rel="stylesheet">
 
-  <body>
+</head>
+
+<body>
     <div id="mainparent-signin"></div>
     <div id="mainparent-signup"></div>
     <nav class="nav">
-      <!-- Adding naviagation-->
-      <div class="input-buttons">
-        <button id="signin">Sign In</button>
-        <button id="signup">Sign Up</button>
-      </div>
-      <div class="logo">
-        <!-- Adding Scribbler Logo Content-->
-        <p id="main">ScriBBler</p>
-        <p id="tagline">Explore, Imagine, Create</p>
-      </div>
+        <!-- Adding naviagation-->
+        <div class="input-buttons">
+            <button id="signin">Sign In</button>
+            <button id="signup">Sign Up</button>
+        </div>
+        <div class="logo">
+            <!-- Adding Scribbler Logo Content-->
+            <p id="main">ScriBBler</p>
+            <p id="tagline">Explore, Imagine, Create</p>
+        </div>
     </nav>
     <div class="post-option">
-      <div class="post-title">It is a blog</div>
-      <div class="author-option">
-        <div class="author-name">Hello</div>
-        <div class="edit-save"><button>Edit</button></div>
-      </div>
-      <div class="edit-content">
-        <textarea id="posttext" cols=""></textarea>
-      </div>
-      <div class="like">
-        <button>Like</button>
-      </div>
-      <div class="comment">
-        <textarea id="comment-area" cols="100" rows="4"></textarea>
-      </div>
+        <div class="post-title">The legacy of Jimi Hendrix</div>
+        <div class="author-option">
+            <div class="author-name">Hello</div>
+            <div class="edit-save"><button>Edit <i class="fa fa-edit"></i></button></div>
+        </div>
+        <div class="edit-content">
+            <textarea id="posttext" cols=""></textarea>
+        </div>
+        <div class="like">
+            <button><i class="fa fa-thumbs-up"></i>Like</button>
+            <p>Be the first one to like it</p>
+        </div>
+        <div class="comment">
+            <textarea id="comment-area" cols="100" rows="4" placeholder="Leave your comment..."></textarea>
+            <div id="comment"><button>Comment</button></div>
+        </div>
     </div>
     <script src="../scripts/js/header.js"></script>
-  </body>
+</body>
+
 </html>
