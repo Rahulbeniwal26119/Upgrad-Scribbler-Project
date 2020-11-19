@@ -1,3 +1,4 @@
+/* signin Model */
 var signInModal =
     '<div id="signinModal" class="modal">' +
     '<div id="modal-content">' +
@@ -32,6 +33,7 @@ var signInModal =
     '</div>' +
     '</div>'
 
+/*Signup Model */
 var signUpModal =
     '<div id="signupModal" class="modal">' +
     '<div id="modal-content">' +
@@ -89,17 +91,14 @@ var textarea = document.getElementById("Content");
 
 function showSignInModal() {
     signInModal.style.display = "block";
-    console.log("clicked");
 }
 
 function showSignUpModal() {
     signUpModal.style.display = "block";
-    console.log("clicked");
 }
 
 function showCreatePostModal() {
     penPostModal.style.display = "block";
-    console.log("clicked");
 }
 
 signInButton.addEventListener("click", showSignInModal);
@@ -123,7 +122,6 @@ function hideModal() {
     catch (e) {
 
     }
-    console.log("close clicked");
 }
 
 
@@ -134,6 +132,7 @@ try {
 }
 catch (e) {
 }
+
 window.onclick = function (event) {
     if (event.target == signInModal)
         signInModal.style.display = "none";
@@ -142,9 +141,11 @@ window.onclick = function (event) {
     else if (event.target == penPostModal)
         penPostModal.style.display = "none";
 }
+
 function myValidation() {
     return false;
 }
+
 // window.addEventListener("resize", () => {
 //     if (screen.width == window.innerWidth) {
 //         textarea.setAttribute("rows", "23");

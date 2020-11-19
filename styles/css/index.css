@@ -29,6 +29,7 @@ body
     font-size: medium;
     padding: 0.8rem 0.8rem;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .post-buttons a {

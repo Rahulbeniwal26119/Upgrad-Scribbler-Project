@@ -21,6 +21,7 @@ body {
     margin-right: 9%;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    ;
 
 }
 
@@ -148,7 +149,7 @@ body {
 
 
 .delete-modal-content {
-    background-color: #fefefe;
+    background-color: white;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -207,4 +208,13 @@ body {
 
 .button a:visited {
     color: inherit;
+}
+
+p#tagline {
+    color: white;
+    font-weight: 600;
+}
+
+.post {
+    box-shadow: 1px 5px 5px rgb(122, 87, 21);
 }

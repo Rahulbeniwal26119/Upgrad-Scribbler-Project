@@ -26,7 +26,6 @@ as no font was specified in project detail */
 .logo {
     /* styling logo */
     padding-top: 0;
-    font-family: "Cedarville Cursive", cursive;
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
@@ -39,14 +38,7 @@ as no font was specified in project detail */
     margin-left: 0.5%;
 }
 
-#tagline {
-    /* tagline */
-    /* position: absolute;
-    top: 3.1rem;
-    font-size: 0.8rem;
-    margin-left: 0.7%;
-    padding: 0; */
-}
+
 
 #signin {
     margin-right: 0.3rem;

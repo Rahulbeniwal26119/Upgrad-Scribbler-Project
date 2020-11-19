@@ -13,7 +13,6 @@ var hideDeleteModal = document.getElementById("no-delete");
 
 function showDeleteModal() {
     model.style.display = "block";
-    console.log("clicked");
 }
 
 hideDeleteModal.addEventListener("click", hideModal);
@@ -24,7 +23,6 @@ function hideModal() {
     catch (e) {
 
     }
-    console.log("close clicked");
 }
 
 var buttonClicked = {};
@@ -59,7 +57,6 @@ function fetchData3() {
     var posttitle = document.getElementById(`title` + index).innerHTML;
     var authorName = document.getElementById(`authorname` + index).innerHTML;
     var postContent = document.getElementById(`postcontent` + index).innerHTML;
-    console.log(authorName, postContent);
     document.cookie = `authorname=${authorName}; expires=Thu, 18 Dec 2021 12:00:00 UTC`;
     localStorage.setItem("postcontent", postContent);
     localStorage.setItem("title", posttitle);

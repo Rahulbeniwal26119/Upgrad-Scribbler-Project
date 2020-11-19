@@ -1,4 +1,4 @@
-var likeButton = document.getElementsByClassName("likebutton")[0];
+var likeButton = document.getElementById("like-button");
 var likeLine = document.getElementById("like-people");
 var clickNumber = 0;
 var textBox = document.getElementById("posttext");
@@ -48,10 +48,8 @@ commentButton.addEventListener("click", () => {
     p.setAttribute("class", "user-comment");
     p.innerHTML = comment.value;
     allcomment.push(p);
-    console.log(allcomment)
     comment.value = "";
     for (let c = allcomment.length - 1; c >= 0; c--) {
         commentList.appendChild(allcomment[c]);
     }
 })
-console.log(sessionStorage.posttitle);
