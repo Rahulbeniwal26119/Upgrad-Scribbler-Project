@@ -8,7 +8,6 @@ body {
 }
 
 .post-title {
-    background: red;
     text-align: center;
     margin-top: 0;
     margin-bottom: 2vh;
@@ -25,6 +24,7 @@ body {
 .author-option {
     width: 100%;
     margin-bottom: 5vh;
+    margin-top: 0%;
 }
 
 
@@ -34,12 +34,15 @@ body {
 
 #posttext {
     width: 100%;
-    border: 1px solid red;
+    border: none;
     resize: none;
     box-sizing: border-box;
+    border-radius: 3px;
     height: 30vh;
+}
 
-
+#posttext:focus {
+    border: 3px solid rgb(192, 165, 192)
 }
 
 .edit-save {
@@ -48,7 +51,6 @@ body {
 }
 
 .author-name {
-    background: orange;
     width: 50%;
     position: relative;
     top: 37px;
@@ -61,8 +63,12 @@ body {
     outline: 0;
     padding: 11px 11px 11px 25px;
     background: rgb(240, 20, 64);
-    box-shadow: ;
+    box-shadow: 0px 10px 20px 0.1px rgb(240, 20, 64);
     color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+
 }
 
 .like button {
@@ -71,7 +77,10 @@ body {
     border: 0;
     outline: 0;
     background: rgb(240, 20, 64);
+    box-shadow: 0px 10px 20px 0.1px rgb(240, 20, 64);
     color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #comment button {
@@ -80,5 +89,22 @@ body {
     border: 0;
     outline: 0;
     background: rgb(240, 20, 64);
+    box-shadow: 0px 10px 20px 0.1px rgb(240, 20, 64);
     color: white;
+    cursor: pointer;
+}
+
+.comment-list {
+    max-width: 65%;
+    background: rgb(238, 234, 238);
+    padding: 10px;
+}
+
+.user-comment {
+    /* box-sizing: border-box; */
+    padding: 10px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    ;
 }
